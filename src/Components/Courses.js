@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { CourseData } from '../Data/CourseData';
-import Course from './Course';
 
 const Courses = () => {
   const [selectCourses, setSelectCourses] = useState(["EEE-4107", "EEE-4117", "IPE-4111"]);
@@ -18,7 +17,9 @@ const Courses = () => {
   const handleSection = event => {
     console.log(event.target.checked);
   }
-  useEffect(() => {  }, [selectCourses])
+  useEffect(() => { }, [selectCourses])
+  
+  
   return (
     <div className='w-full lg:w-1/4 my-8 px-6'>
       <div className='w-full flex flex-col'>
