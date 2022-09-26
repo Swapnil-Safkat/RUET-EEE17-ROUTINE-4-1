@@ -2,7 +2,7 @@ import React from 'react';
 
 const Teacher = ({ tech }) => {
   return (
-    <div className='w-full flex flex-row my-3 items-center rounded-full border-2 border-gray-700 shadow-lg shadow-gray-800 bg-zinc-800'>
+    <div className='w-full flex flex-row items-center rounded-full border-2 border-gray-700 shadow-lg shadow-gray-800 bg-zinc-800'>
       <div className="avatar hover:scale-150">
         <div className="w-12 h-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
           <img src={tech.img} alt={tech.short} />

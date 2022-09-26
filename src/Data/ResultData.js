@@ -6,7 +6,8 @@ const HV = {
   lab: false
 };
 const HVLab = {
-  course: "EEE-4144",
+  course: "EEE-4143",
+  labC:"EEE-4144",
   short: "HVLab",
   teachers: ["MMI"],
   room: "Measurement Lab",
@@ -20,7 +21,8 @@ const FAB = {
   lab: false
 };
 const FABLab = {
-  course: "EEE-4166",
+  course: "EEE-4165",
+  labC:"EEE-4166",
   short: "FAB Lab",
   teachers: ["MFH"],
   room: "NanoTech Lab",
@@ -34,7 +36,8 @@ const PS = {
   lab: false
 };
 const PSLab = {
-  course: "EEE-4142",
+  course: "EEE-4141",
+  labC:"EEE-4142",
   short: "PS Lab",
   teachers: ["TSJ"],
   room: "IOT Lab",
@@ -48,7 +51,8 @@ const VLSI = {
   lab: false
 };
 const VLSILab = {
-  course: "EEE-4164",
+  course: "EEE-4163",
+  labC:"EEE-4164",
   short: "VLSI Lab",
   teachers: ["SMH"],
   room: "IOT Lab",
@@ -62,10 +66,11 @@ const COM = {
   lab: false
 };
 const COMLab = {
-  course: "EEE-4184",
+  course: "EEE-4183",
+  labC:"EEE-4184",
   short: "COM Lab",
   teachers: ["MZI"],
-  room: "Telecommunication Lab",
+  room: "TeleCom Lab",
   lab: true
 };
 
@@ -78,7 +83,8 @@ const aDSP = {
   lab: false
 };
 const aDSPLab = {
-  course: "EEE-4108",
+  course: "EEE-4107",
+  labC:"EEE-4108",
   short: "DSP Lab",
   teachers: ["MAR"],
   room: "Computer Lab 2",
@@ -92,7 +98,8 @@ const bDSP = {
   lab: false
 };
 const bDSPLab = {
-  course: "EEE-4108",
+  course: "EEE-4107",
+  labC:"EEE-4108",
   short: "DSP Lab",
   teachers: ["AM"],
   room: "Computer Lab 2",
@@ -106,87 +113,34 @@ const TV = {
   lab: false
 };
 const TVLab = {
-  course: "EEE-4118",
+  course: "EEE-4117",
+  labC:"EEE-4118",
   short: "R&TV Lab",
   teachers: ["MFM"],
-  room: "Telecommunication Lab",
+  room: "TeleCom Lab",
   lab: true
 };
 
 const IPE = {
   course: "IPE-4111",
   short: "IPE",
-  teachers: ["SA", "MRI"],
+  teachers: ["SA/MRI"],
   room: 302,
   lab: false
 }
 export const resultData = {
   a: [
-    {
-      saturday:
-      {
-        part1: [HV, HV, FAB],
-        part2: [aDSP, IPE, TV],
-        part3: [PSLab]
-      },
-      sunday:
-      {
-        part1: [aDSPLab],
-        part2: [FAB,HV,PS],
-        part3: [FABLab]
-      },
-      monday:
-      {
-        part1: [TVLab],
-        part2: [VLSI,COM,PS],
-        part3: [COMLab]
-      },
-      tuesday:
-      {
-        part1: [COM,VLSI,VLSI],
-        part2: ["x",aDSP,IPE],
-        part3: [VLSILab]
-      },
-      wednesday:
-      {
-        part1: [PS,FAB,COM],
-        part2: [TV,TV,aDSP],
-        part3: [HVLab]
-      },
-    }
+    [[HV, HV, FAB], [aDSP, IPE, TV], [PSLab]],
+    [[aDSPLab], [FAB, HV, PS], [FABLab]],
+    [[TVLab], [VLSI, COM, PS], [COMLab]],
+    [[COM, VLSI, VLSI], ["x", aDSP, IPE], [VLSILab]],
+    [[PS, FAB, COM], [TV, TV, aDSP], [HVLab]]
   ],
   b: [
-    {
-      saturday:
-      {
-        part1: [HV, HV, FAB],
-        part2: [bDSPLab],
-        part3: [PSLab]
-      },
-      sunday:
-      {
-        part1: [TV,TV,bDSP],
-        part2: [FAB,HV,PS],
-        part3: [FABLab]
-      },
-      monday:
-      {
-        part1: ["x",bDSP,IPE],
-        part2: [VLSI,COM,PS],
-        part3: [COMLab]
-      },
-      tuesday:
-      {
-        part1: [COM,VLSI,VLSI],
-        part2: [TVLab],
-        part3: [VLSILab]
-      },
-      wednesday:
-      {
-        part1: [PS,FAB,COM],
-        part2: [bDSP,TV,IPE],
-        part3: [HVLab]
-      },
-    }
+    [[HV, HV, FAB], [bDSPLab], [PSLab]],
+    [[TV, TV, bDSP], [FAB, HV, PS], [FABLab]],
+    [["x", bDSP, IPE], [VLSI, COM, PS], [COMLab]],
+    [[COM, VLSI, VLSI], [TVLab], [VLSILab]],
+    [[PS, FAB, COM], [bDSP, TV, IPE], [HVLab]]
   ]
 };
