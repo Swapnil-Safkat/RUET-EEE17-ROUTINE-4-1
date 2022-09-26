@@ -1,7 +1,6 @@
 import './App.css';
 import Courses from './Components/Courses';
 import Header from './Components/Header';
-import Routine from './Components/Routine';
 import Teachers from './Components/Teachers';
 
 function App() {

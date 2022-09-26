@@ -8,7 +8,7 @@ const Teacher = ({ tech }) => {
           <img src={tech.img} alt={tech.short} />
         </div>
       </div>
-      <div className='flex flex-col justify-center items-start mx-4 py-2'>
+      <div className='w-full flex flex-col lg:flex-row justify-center lg:justify-between items-start lg:items-center  mx-4 py-2'>
         <h1 className='text-start text-gray-100 text-base font-semibold'>{tech.name }</h1>
         <h1 className='text-start text-gray-400 text-[12px] font-bold'>{tech.short }</h1>
       </div>
