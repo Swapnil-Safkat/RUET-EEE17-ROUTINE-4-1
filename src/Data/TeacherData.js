@@ -16,7 +16,7 @@ export const TeacherData = [
   },
   {id:3,
     name: 'Dr. Jishan-E-Giti',
-    short: 'JRG',
+    short: 'JEG',
     img:'https://www.eee.ruet.ac.bd/public/storage/profile/photo189.jpg'
   },
   {id:4,
